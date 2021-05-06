@@ -20,6 +20,7 @@ code {
 button {
   background-color: transparent;
   cursor: pointer;
+  border: none;
 }
 
 main {
@@ -36,6 +37,7 @@ main {
   background-color: white;
   padding: 1.5rem;
   border-radius: 1rem;
+  box-shadow: 2px 2px 5px 0px rgba(84, 37, 94, 0.75);
 }
 
 .header {
@@ -72,4 +74,66 @@ main {
   border-width: 1px;
   border-color: rgba(117, 116, 116, 0.521);
   padding-bottom: 0.75rem;
+}
+
+.about {
+  padding: 1rem;
+}
+
+.about li {
+  list-style-type: none;
+  margin: 0 1rem;
+  font-size: smaller;
+}
+
+.about p {
+  font-size: smaller;
+}
+
+.points {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border: solid;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-color: rgba(0, 0, 0, 0.486);
+  box-shadow: 2px 2px 5px 0px rgba(161, 101, 173, 0.308);
+}
+.points h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.desc {
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.social,
+.programming {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.social-icon {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.social-info {
+  text-align: center;
+  color: rgb(70, 69, 70);
+}
+
+.programming {
+  justify-items: center;
+}
+
+.programming-icon {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  color: rgb(70, 69, 70);
 }
