@@ -7,7 +7,11 @@ function Nav({ index, setIndex }) {
       {data.map((item) => {
         const { id, title } = item;
         return (
-          <button key={id} onClick={() => setIndex(id)}>
+          <button
+            className={`nav-item && ${index === id && "active"}`}
+            key={id}
+            onClick={() => setIndex(id)}
+          >
             <h4>{title}</h4>
           </button>
         );

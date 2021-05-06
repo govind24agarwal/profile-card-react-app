@@ -67,13 +67,23 @@ main {
   text-transform: capitalize;
   padding: 0.25rem 0.4rem;
   border: none;
+  padding-bottom: 1rem;
 }
 
 .nav {
   border-bottom: solid;
   border-width: 1px;
   border-color: rgba(117, 116, 116, 0.521);
-  padding-bottom: 0.75rem;
+}
+
+.nav-item:hover {
+  color: rgb(101, 97, 104);
+  transition: all 0.1s linear;
+}
+
+.active {
+  border-bottom: solid !important;
+  border-width: 1px !important;
 }
 
 .about {
