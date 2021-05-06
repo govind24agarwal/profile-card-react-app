@@ -1,33 +1,22 @@
 import React from "react";
-import {
-  FaFacebookSquare,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-  FaMailBulk,
-} from "react-icons/fa";
+import { social } from "../data";
 
 function Social() {
   return (
     <div className="social">
-      <button className="social-info">
-        <FaFacebookSquare className="social-icon" />
-      </button>
-      <button className="social-info">
-        <FaInstagram className="social-icon" />
-      </button>
-      <button className="social-info">
-        <FaGithub className="social-icon" />
-      </button>
-      <button className="social-info">
-        <FaLinkedin className="social-icon" />
-      </button>
-      <button className="social-info">
-        <FaMailBulk className="social-icon" />
-      </button>
-      <button className="social-info">
-        <FaMailBulk className="social-icon" />
-      </button>
+      {social.map((item) => {
+        const { id, icon, link } = item;
+        return (
+          <a
+            key={id}
+            href={link}
+            target="_blank"
+            className="social-info social-icon"
+          >
+            {icon}
+          </a>
+        );
+      })}
     </div>
   );
 }

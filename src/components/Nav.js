@@ -1,10 +1,10 @@
 import React from "react";
-import data from "../data";
+import { tabs } from "../data";
 
 function Nav({ index, setIndex }) {
   return (
     <div className="nav">
-      {data.map((item) => {
+      {tabs.map((item) => {
         const { id, title } = item;
         return (
           <button
